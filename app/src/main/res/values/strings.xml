@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RecyclerView Demo</string>
+    <string name="just_a_map">Just a map</string>
+</resources>

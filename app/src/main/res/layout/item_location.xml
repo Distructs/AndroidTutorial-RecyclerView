@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#4AA6E6D0"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@android:drawable/ic_dialog_map"
+        android:background="@color/purple_700"
+        android:contentDescription="@string/just_a_map" />
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="This will not appear when the ui is built."/>
+    <TextView
+        android:id="@+id/latTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/icon"
+        app:layout_constraintTop_toBottomOf="@id/titleTV"
+        app:layout_constraintEnd_toStartOf="@id/lonTV"
+        tools:text="Lat: 34.444"/>
+    <TextView
+        android:id="@+id/lonTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/latTV"
+        app:layout_constraintTop_toBottomOf="@id/titleTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Lon: 30.332"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/rootLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/firstNameLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="First Name: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/firstNameTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Rick"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toEndOf="@id/firstNameLabel"
+        app:layout_constraintBaseline_toBaselineOf="@id/firstNameLabel"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/lastNameLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Last Name: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firstNameLabel"/>
+    <TextView
+        android:id="@+id/lastNameTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sanchez"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toEndOf="@id/lastNameLabel"
+        app:layout_constraintBaseline_toBaselineOf="@id/lastNameLabel"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/phoneLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Phone: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lastNameLabel"/>
+
+    <TextView
+        android:id="@+id/phoneTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="562-333-2233"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toEndOf="@id/phoneLabel"
+        app:layout_constraintBaseline_toBaselineOf="@id/phoneLabel"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/purple_700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phoneLabel"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
